@@ -72,7 +72,7 @@ class Home(main.Home):
                        user_obj=http.request.env['res.users']
                        credentials = user_obj.digit_authenticate({'phone_number': response.json().get('phone_number'),'access_token': response.json().get('access_token')['token']})
                        if credentials:
-                               return login_and_redirect(*credentials, redirect_url='/web')
+                           return login_and_redirect(*credentials, redirect_url='/web')
                        else:
                            logout=request.session.logout(keep_db=True)
                            return werkzeug.utils.redirect('/web/login')
