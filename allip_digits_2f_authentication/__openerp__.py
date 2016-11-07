@@ -13,6 +13,7 @@
     'images': ['static/description/Two-Factor-Authenticaton.png'],
     'version': '1.0',
     'depends': ['base'],
+    'external_dependencies': {'python': ['simplejson']},
     'data': [
         'security/ir.model.access.csv',
         'views/configuration.xml',
