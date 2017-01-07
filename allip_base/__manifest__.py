@@ -7,6 +7,7 @@
       """,
     'author': "All-IP Cloud",
     'website': "https://www.allipcloud.com",
+    'external_dependencies': {'python': ['simplejson']},
     'category': 'Extra Tools',
     'license': 'LGPL-3',
     'version': '1.0',
