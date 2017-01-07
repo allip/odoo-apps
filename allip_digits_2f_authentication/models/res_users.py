@@ -30,7 +30,7 @@ class ResUsers(models.Model):
         return super(ResUsers, self).write(vals)
             
     def digit_authenticate(self,data):
-           user_num = data['phone_number'][-10:]
+           user_num = data['phone_number']
            dbname = request.session.db
            key = request.session.loginKey
            del request.session['loginKey']
